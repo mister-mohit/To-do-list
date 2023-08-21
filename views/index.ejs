@@ -1,0 +1,36 @@
+
+<body>
+    <%- include("partials/header.ejs") %>
+    <section class="main-container">
+        <div class="container">
+
+            <div class="heading-container">
+                <h1>Work List</h1>
+            </div>
+
+            <div class="task-container">
+                <div class="form-container">
+                    <% if(locals.element){ %>
+                        <div class="task-list">
+                            <% element.forEach((inputs) => { %>
+                                <div class="task">
+                                    <input type="checkbox" name="vehicle1" class="strikethrough"> 
+                                    <label class="task-label" for="vehicle1"> <%= inputs %></label>
+                                </div>
+                            <% }) %>
+                        </div>
+                    <% } %>
+                    
+                    <form action="/submit" method="POST">
+                        <input type="text" class="text-box" name="task" placeholder="Add new item here">
+                        <input type="submit" class="submit-btn" value="+">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%- include("partials/footer.ejs") %>
+</body>
+
+
+</html>

@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    background-color: #e4e9fd;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-bar{
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-icon{
+    font-size: 20px;
+    color: a683e3;
+    text-decoration: none;
+}
+
+.header-icon svg{
+    margin-right: 5px;
+}
+
+header{
+    position: fixed;
+}
+
+.main-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding-top: 100px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-container{
+    font-size: 25px;
+    color: white;
+    background-color: blueviolet;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding: 7px 0px;
+    border-radius: 10px;
+}
+
+.task-container{
+    margin-top: 40px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.form-container form{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    border-top: 1px solid rgba(128,128,128.0.7);
+    overflow: hidden;
+}
+
+.form-container{
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.text-box{
+    height: 100%;
+    width: 80%;
+    border-style:none;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.submit-btn{
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: blueviolet;
+}
+
+.task{
+    min-height: 60px;
+    width: 100%;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.task input{
+    padding: 5px;
+}
+
+.task-label{
+    margin-left: 5px;
+}
+
+input[type=checkbox]:checked + label {
+    text-decoration: line-through;
+} 
+
+footer{
+    width: 100%;
+    display: flex;
+    gap : 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+input:focus{
+    outline: none;
+}
